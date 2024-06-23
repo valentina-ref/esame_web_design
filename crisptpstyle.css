@@ -1,0 +1,490 @@
+@font-face {
+    font-family: 'Kumbh_Sans';
+    src: url(fonts/Kumbh_Sans/static/KumbhSans-Light.ttf);
+}
+
+@font-face{
+    src:url(fonts/Open_Sans/OpenSans-VariableFont_wdth\,wght.ttf);
+    font-family: 'Open_Sans';
+}
+
+
+*{
+   margin: 0px;
+   padding: 0px;
+   user-select: none;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open_Sans';
+    font-weight: 400;
+    font-size: 18px;
+    background-color: rgba(196, 186, 200, 0.2);
+    line-height: 30px;
+}
+
+.nav {
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    position: fixed;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    padding-right: 40px;
+    padding: 40px 0px 40px 0px;
+}
+
+.nav-links li {
+    padding-left: 30px;
+    margin-right: 50px;
+}
+
+.nav-links li a {
+    font-family: 'Kumbh_Sans';
+    color: #592B96;
+    text-decoration: none;
+    font-size: 18px;
+    text-transform: uppercase;
+    
+}
+
+.nav-links li a:hover {
+    color: #B48BEB;
+}
+
+ #logo img {
+    max-width: 340px;
+    height: auto;
+    overflow:hidden;
+   padding: 50px;
+ }
+
+.header{
+    height:925px;
+    width: 100%;
+    background-color: rgb(218, 198, 255,38%);
+    display: flex;
+    flex-direction: column; 
+    justify-content: flex-start;
+}
+
+.header-title {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    margin: 185px 0 45px 0;
+}
+
+.header-title h1 {
+    font-family: 'Kumbh_Sans';
+  font-size: 55px;
+  color: #592B96;
+}
+
+.header-title p {
+    font-size: 22px;
+    line-height: 50px; 
+ }
+
+ .header-image{
+    width: 100%;
+    height: 75%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding-bottom: 60px;
+ }
+
+ .header img{
+    width: auto;
+    height: 80%;
+    display: flex;
+    border-radius: 109px;
+ }
+
+ .sect-1{
+    width: 100%;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+ }
+
+.sect-1-items{
+width: 60%;
+}    
+  
+ .sect-1 h2{
+    padding-bottom: 10px;
+    margin-top: 50px;
+}
+p{
+    color: #351F52;
+}
+
+h2,h3,h4{
+    color: #592B96;
+}
+
+
+
+.sect-3{
+    width: 100%;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.sect-3-items{
+    width: 60%;
+}
+
+
+.sect-3-items li{
+    list-style-position:inside;
+    color: #351F52;
+    padding-bottom: 5px;
+    text-align:start;
+}
+
+.images-sect{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 60px;
+}
+
+.images-sect img{
+    width: 300px;
+    max-width: 370px;
+    height: 300px;
+    max-height: 370px;
+}
+
+.sect-4{
+    width: 100%;
+    height: 700px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sect-4-items{
+    width: 60%;
+}
+
+
+.image2-sect{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+
+.image2-sect img{
+    max-width: 400px;
+    max-height: 300px;
+}
+
+.sect-5{
+    max-width: 100%;
+    width: 60%;
+    height: 750px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.last-sect{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 30px;
+    color: #592B96;
+    margin-bottom:40px;
+}
+
+.last-sect p{
+    color: #351F52;
+    font-weight: bold;
+}
+    
+footer{
+    padding: 30px;
+    background-color:rgb(218, 198, 255,38%) ;
+}
+    
+       .menu-icon {
+        display: none;
+        font-size: 24px;
+        cursor: pointer;
+    }
+    
+    #menu-toggle {
+        display: none;
+    }
+    
+    .nav-links {
+        list-style: none;
+        padding: 0;
+    }
+    
+    .nav-links li {
+        display: inline;
+        margin-left: 20px;
+    }
+    
+    
+    
+    
+    
+    
+    @media (max-width: 1300px) {
+
+        .nav img{
+            width: 80%;
+        }
+
+
+.sect-1{
+    height: max-content;
+    margin-top: 130px;
+    margin-bottom: 130px;
+}
+
+        .sect-1-items{
+width: 60%;
+        }
+
+        .sect-1 h2{
+    font-size: 30px;
+    margin-bottom: 25px;
+        }
+
+        .menu-icon {
+            display: block;
+            padding: 35px;
+        }
+    
+        .nav-links {
+            display: none;
+            text-align: right;
+            width: 100%;
+            background-color: #ffffff;
+            position: absolute;
+            top: 100px;
+            left: 0;
+            z-index: 1;
+        }
+    
+        #menu-toggle:checked + .menu-icon + .nav-links {
+            display: block;
+        }
+    
+
+        .nav-links li {
+            display: block;
+        }
+
+    .sect-3{
+        height: max-content;
+    }
+
+.sect-3-items{
+    width: 70%;
+    line-height: 40px;
+}
+.sect-3 h2{
+font-size: 30px;
+}
+
+
+        .images-sect{
+            height: max-content;
+            margin: 100px 0 100px;
+        }
+        .images-sect img{
+            width: 30%;
+            height: 20%;
+        }
+
+        .sect-4{
+            height: max-content;
+        }
+
+        .sect-4-items{
+            width: 70%;
+        }
+
+        .image2-sect {
+         height: max-content;
+         margin: 100px 0 100px 0;
+        }
+        .image2-sect img {
+            width: 40%;
+            height: 40%;
+            margin: 40px 0 50px 0;
+        }
+
+        .sect-5{
+            height: max-content;
+        }
+
+        .sect-5-items{
+            width: 70%;
+        }
+        
+    .last-sect{
+        height: max-content;
+        margin: 50px 0 50px 0;
+    }    
+   #last-one{
+    width: 70%;
+   } 
+
+    #last-one h3{
+        font-size: 18;
+    }
+    
+    #last-one p{
+        font-size: 14px;
+    }
+    footer p {
+        font-size: 12px;
+    }
+}
+        
+    
+    @media (max-width: 768px) {
+
+        .menu-icon {
+         padding-right: 35px;
+        }
+
+.header{
+height: 600px;
+}
+
+        .header h1 {
+            font-size: 30px;
+            margin: 80px auto 30px;
+        }
+
+        .header-title p{
+            font-size: 18px;
+        }
+
+        .header-title{
+        height: 200px;
+        align-items: center;
+        margin-top: 50px;
+        }
+
+        .header-image{
+            height: 100%;
+        }
+
+        .header img{
+          width: 80%;
+       height: 100%;
+       border-radius: 52px;
+       
+          justify-content: center;
+        }
+        .sect-1{
+        margin-top: 50px; 
+           height: auto;
+           width: 80%;
+           margin-left: 0;
+           
+           
+        }
+.sect-1 p{
+    font-size: 16px;
+}
+    
+       
+        .sect-3 {
+         height: auto;
+         width: 80%;
+           margin-left: 0;
+             }
+            .sect-4{
+                height: auto;
+                width: 80%;
+           margin-left: 0;
+            }
+            .sect-5{
+                height: auto;
+                width: 80%;
+           margin-left: 0;
+            }
+            .images-sect{
+                height: auto;
+                margin: 40px 0 80px;
+            }
+            .images-sect img{
+                width: 30%;
+                height: 30%;
+            }
+            .image2-sect {
+             height: auto;
+        
+            }
+            .image2-sect img {
+                width: 40%;
+                height: 30%;
+                padding: 40px 0 80px;
+            }
+            .sect-3-items li{
+                font-size: 16px;
+            }
+    
+            .sect-4 li{
+                font-size: 16px;
+            }
+            .sect-5 li{
+                font-size: 16px;
+            }
+            .last-sect{
+                height: auto;
+                margin-bottom: 20px;
+            }
+        #last-one{
+    
+            width: 60%;
+          }
+          
+          #last-one h3{
+    font-size: 18px;
+            
+          }
+       
+    
+    }

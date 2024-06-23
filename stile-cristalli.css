@@ -1,0 +1,803 @@
+@font-face {
+    font-family: 'Kumbh_Sans';
+    src: url(fonts/Kumbh_Sans/static/KumbhSans-Light.ttf);
+}
+
+@font-face{
+    src:url(fonts/Open_Sans/OpenSans-VariableFont_wdth\,wght.ttf);
+    font-family: 'Open_Sans';
+}
+
+
+*{
+   margin: 0px;
+   padding: 0px;
+   scroll-behavior: smooth;
+   user-select: none;
+   overflow-x: hidden;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open_Sans';
+    font-weight: 400;
+    font-size: 18px;
+    background-color: #F4EDEE;
+    overflow-y: hidden;
+}
+
+.nav {
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    position: fixed;
+    overflow-y: hidden;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    padding-right: 40px;
+    padding: 40px 0px 40px 0px;
+}
+
+.nav-links li {
+    padding-left: 30px;
+    margin-right: 50px;
+}
+
+.nav-links li a {
+    font-family: 'Kumbh_Sans';
+    color: #592B96;
+    text-decoration: none;
+    font-size: 18px;
+    text-transform: uppercase;
+    
+}
+
+.nav-links li a:hover {
+    color: #B48BEB;
+}
+
+#logo img {
+    max-width: 340px;
+    height: auto;
+    overflow:hidden;
+    padding: 50px;
+ }
+ 
+.header{
+    height: 1025px;
+    width: 100%;
+    background-color: rgb(218, 198, 255,38%);
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+}
+
+.header-title {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 100px 0 40px 0;
+}
+
+.header-title h1 {
+    font-family: 'Kumbh_Sans';
+  font-size: 55px;
+  color: #592B96;
+}
+
+.header-title p {
+    color: #351F52;
+    font-size: 22px;
+    line-height: 30px; 
+ }
+
+ .header-image{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+ }
+
+ .header img{
+    max-width: 42%;
+    max-height: 88%;
+    border-radius: 109px;
+ }
+
+ .sect-info{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+ }
+ 
+ .datiNumerici{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    font-size: 30px;
+ }
+ .categorie{
+    padding: 0 120px 0 120px;
+ }
+
+ .datiNumerici h1{
+    color: rgba(183, 159, 228, 0.926);
+    padding: 15px 0 25px 0;
+ }
+
+ .datiNumerici p{
+    color: #592B96;
+    padding-bottom: 100px;
+    font-weight: bold;
+ }
+.legenda{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+ 
+  .chakra img, .zodiac-sign img {
+    max-width: 100px;
+    height: auto;
+    margin: 0 10px;
+  }
+.chakra{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   margin-bottom: 50px;
+}
+.chakra ul{
+display: flex;
+flex-flow:row;
+justify-content: center;
+}
+
+  .chakra li{
+    width: 180px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .chakra a{
+    text-decoration: none;
+    color: #592B96;
+    font-weight: bold;
+  }
+
+
+  .zodiaco{
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   margin-bottom: 80px;
+    }
+    
+    .zodiaco ul{
+       display: grid;
+       grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        justify-content: center;
+    }
+    
+  .zodiaco li {
+    color: #592B96;
+    font-weight: bold;
+    width: 130px;
+    height: 130px;
+  padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  
+.alphabet-popup {
+    position: fixed;
+    top: 15%;
+    left: 10px;
+    background-color: rgb(255, 255, 255);
+    color: #592B96 ;
+    padding: 5px;
+    border-radius:  5px;
+    font-size: 20px;
+
+}
+
+.alphabet-popup a {
+    text-decoration: none;
+    font-weight: bold;
+
+}
+
+.alphabet-popup a:active {
+    color: rgb(203, 134, 220);
+ }
+
+.alphabet-popup span {
+    display: block;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.alphabet-popup span:hover {
+    background-color: rgb(218, 198, 255,38%);
+}
+
+.content {
+    padding: 20px;
+}
+
+
+.sect-testo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 62%;
+    margin: auto;
+    line-height: 30px;
+}
+
+.sect-testo ul{
+    list-style-type: none;
+}
+ .h1,h2,h3{
+    color: #592B96;
+ }
+
+.p{
+    color: #351F52;
+    line-height: 1.4;
+}
+
+
+#except{
+    font-size: 22px;
+    display: inline;
+    color: #592B96;
+    font-weight: bold;
+}
+ .sect-cristalli{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-top: 40px;
+ }
+ 
+ .rigacris{
+width: 92%;
+padding: 25px 0 25px 0;
+display: flex;
+flex-direction: row;
+justify-content: center;
+ }
+
+    .iconcris{
+    width: 19%; 
+    height: min-content;
+    display: flex;
+    justify-content: center;
+    }
+    .iconcris img{
+        width: 167px;
+        height: 167px;
+        object-fit:scale-down;
+        margin-right: 50px;
+        margin-top: 50px;
+    }
+
+ .testocris{
+width: 66%;
+height: min-content;
+display: flex;
+flex-direction: column;
+justify-content: center;
+ line-height: 30px;
+ }
+
+ .testocris h2{
+    overflow-y: hidden;
+ }
+
+.segnicris{
+width: 1025px;
+height: 90px;
+display: flex;
+flex-direction: column;
+padding-left: 15px;
+}
+
+.segnicris img{
+    height: 90px;
+    object-fit: scale-down;
+}
+
+
+.last-sect{
+    width: 100%;
+    height: 225px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 75px;
+    line-height: 30px;
+ }
+
+#last-one{
+    width: 45%;
+}
+
+#last-one h3{
+    color:#592B96;
+}
+
+#last-one p{
+    color:#351F52;
+    font-weight: bold;
+}
+
+footer{
+    padding: 30px;
+    background-color:rgb(218, 198, 255,38%) ;
+    }
+
+   
+
+   
+
+.menu-icon {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+.nav-links {
+    list-style: none;
+    padding: 0;
+}
+
+.nav-links li {
+    display: inline;
+    margin-left: 20px;
+}
+
+
+
+
+
+
+
+@media screen and (min-width:769px) and (max-width: 1300px) {
+
+    .alphabet-popup{
+        display: none;
+            }
+
+            .nav img{
+                width: 80%;
+            }
+
+    .menu-icon {
+        display: block;
+        padding: 20px;
+    }
+
+   
+
+    .nav-links li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .header{
+       max-height:600px;
+        padding-bottom: 150px;
+    }
+    .header h1{
+        font-size: 30px;
+
+    }
+
+    .header p{
+        overflow-y: hidden;
+
+    }
+
+    .header img{
+        max-width: 65%;
+        height: 100%;
+    }
+
+    .sect-testo h2{
+        font-size: 22px;
+    }
+
+    .datiNumerici{
+      
+        flex-wrap: wrap;
+        font-size: 20px;
+     }
+
+
+    div.legenda{
+        width: 100%;
+    }
+   
+    .chakra{
+        width: 100%;
+    }
+
+  .chakra ul{
+    width: 90%;
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr 1fr;
+  }  
+
+  .chakra li{
+    padding: 20px;
+  }
+
+     .zodiaco {
+        width: 90%;
+    }
+   
+
+.categorie{
+    width: 50%;
+}
+
+.sect-testo{
+    width: 100%;
+    
+}
+
+    .sect-testo ul{
+        font-size: 16px;
+        width: 60%;
+    }
+
+    #last-one{
+        width: 60%;
+      }
+
+    #last-one h3 {
+        font-size: 18px;
+    }
+
+  #last-one p {
+        font-size: 16px;
+    }
+
+    .last-sect{
+        padding-bottom: 40px;
+    }
+
+    .testocris p{
+        font-size: 15px;
+      }
+
+      .testocris h2{
+        font-size: 20px;
+      }
+      .testocris h3{
+        font-size: 18px;
+      }
+
+
+    .rigacris {
+        flex-direction: column;
+        align-items: center;
+    }
+    .segnicris{
+        overflow-x: visible;
+        margin-top: 30px;
+      }
+      .segnicris img{
+        width: 100%;
+        margin-top: 20px;
+        height: 100%;
+      }
+        .iconcris {
+            margin-bottom: 30px;
+            overflow-x: visible;
+        }
+    
+        .iconcris img{
+            object-fit: cover;
+            overflow-x: visible;
+            margin: 0;
+            padding: 0;
+           }     
+        
+           .zodiaco li {
+            max-width: 100%;
+            height: 100px;
+          padding: 0px;
+           
+          }
+        
+        
+      
+        
+        .last-sect{
+        height: max-content;
+        }
+        
+        .zodiaco ul{
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+         }
+         .zodiaco li{
+            padding-top: 50px;
+         } 
+
+    footer p{
+        font-size: 14px;
+        }
+           
+.sect-testo h2{
+    font-size: 22px;
+}
+.chakra img{
+    width: 55%;
+
+}
+
+
+.sect-testo{
+    width: 100%;
+    
+}
+    #except{
+        font-size: 20px;
+        
+    }
+
+    #last-one{
+        width: 60%;
+      }
+      #last-one p {
+        font-size: 14px;
+    }
+
+       
+    .testocris {
+        width:75%;
+    }
+      .testocris p{
+        font-size: 15px;
+      }
+
+      .testocris h2{
+        font-size: 20px;
+      }
+      .testocris h3{
+        font-size: 18px;
+      }
+
+      .segnicris{
+        overflow-x: visible;
+      }
+      .segnicris img{
+        width: 100%;
+        margin-top: 20px;
+        height: 100%;
+      }
+        .iconcris {
+            margin-bottom: 30px;
+            overflow-x: visible;
+        }
+
+   .iconcris img{
+    object-fit: cover;
+    overflow-x: visible;
+    margin: 0;
+    padding: 0;
+   }     
+
+   .zodiaco li {
+    max-width: 100%;
+    height: 100px;
+  padding: 0px;
+   
+  }
+
+
+
+.menu-icon {
+    display: block;
+    cursor: pointer;
+}
+
+.menu-toggle {
+    display: none;
+}
+
+.nav-links {
+    list-style: none;
+}
+
+.nav-links li {
+    display: inline;
+    padding-right: 16px;
+}
+
+.last-sect{
+height: max-content;
+}
+
+.zodiaco ul{
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+ }
+ .zodiaco li{
+    padding-top: 50px;
+ }
+
+ footer p {
+    font-size: 12px;
+}
+.menu-toggle:checked ~ .nav-links {
+    display: block;
+    text-align: right;
+    width: 100%;
+    background-color: #ffffff;
+    position: fixed;
+    top: 90px; 
+    height:130px;
+}
+
+
+.nav-links {
+    display: none;
+    height: 0;
+ }
+}
+
+
+@media screen and (max-width: 768px) {
+
+
+    .alphabet-popup {
+        position: fixed;
+        top: 15%;
+margin-left: 85%;
+        background-color: rgb(255, 255, 255);
+        color: #592B96 ;
+        padding: 3px;
+        border-radius:  5px;
+        font-size: 20px;
+  display: none;
+    }
+
+#logo img{
+    width: 80%;
+}
+
+    .menu-icon {
+        display: block;
+        padding: 20px;
+    }
+
+.header{
+    height: 700px;
+}
+
+.header img{
+    max-width: 65%;
+    max-height: 70%;
+}
+
+.datiNumerici{
+    display: flex;
+    flex-direction: column;
+}
+
+.datiNumerici p{
+    font-size: 25px;
+}
+
+.datiNumerici h1{
+    font-size: 50px;
+}
+
+    .menu-toggle:checked ~ .nav-links {
+        display: block;
+        text-align: right;
+        width: 100%;
+        background-color: #ffffff;
+        position: fixed;
+        top: 90px; 
+        height:130px;
+    }
+
+
+    .nav-links {
+        display: none;
+        height: 0;
+     }
+
+     .sect-cristalli{
+        align-items: center;
+     }
+
+     .chakra{
+        width: 80%;
+        overflow-x: visible;
+    }
+
+  .chakra ul{
+    width: 80%;
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   overflow-x: visible;
+  }  
+
+  .chakra li{
+    padding-top: 20px;
+    overflow-x: visible;
+  }
+
+
+     .zodiaco ul{
+        grid-template-columns: 1fr 1fr;
+     }
+    
+     .sect-cristalli,.rigacris{
+        display: flex;
+        flex-direction: column;
+     }
+
+     .iconcris {
+        margin: 0 0 30px 50px;
+        overflow-x: visible;
+    }
+
+    .iconcris img{
+        object-fit: cover;
+        overflow-x: visible;
+        margin: 0;
+        padding: 0;
+       }    
+
+.segnicris img{
+    width: 20%;
+}
+.last-sect{
+    height: auto;
+    margin-bottom: 20px;
+
+}
+#last-one p { 
+    font-size: 14px;
+
+}
+footer p {
+    font-size: 12px;
+}
+    }
